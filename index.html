@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/kgh.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <title>KGH App</title>
+  <!-- <script src="./plugins/leaflet.ajax.min.js"></script> -->
+</head>
+
+<body>
+  <!-- <h1>KGH</h1> -->
+  <iframe id="loadingScreen" src="loading.html" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+  <div id="map-container">
+    <div id="map">
+      <div class="product-card" id="product-card" style="display: none;">
+        <img src="images/garden.webp" alt="Product Image" id="product-image">
+        <h3 id="product-title">KARNATAKA GARDEN</h3>
+        <p id="product-description">You are here, you can close this menu and look at the garden map to learn more..</p>
+        <div class="close-button">
+          <button id="close-btn">Close</button>
+        </div>
+        <div class="action-button">
+          <button id="action-btn">Routes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

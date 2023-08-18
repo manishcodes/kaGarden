@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+html, body, #map {
+  height: 100%;
+  width: 100vw;
+}
+
+/* Map and product card container */
+#map-container {
+  position: relative;
+  flex: 1;
+  height: 100%;
+}
+
+/* Product card styling */
+.product-card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  z-index: 1000;
+  padding-bottom: 60px; /* Add padding on the right for the button */
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.product-card p {
+  margin: 5px 0;
+  max-height: 240px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS devices */
+}
+
+.product-card .close-button {
+  /* text-align: right; */
+  position: absolute;
+  bottom: 14px; /* Adjust as needed for the distance from the bottom */
+  right: 18px; /* Adjust as needed for the distance from the right */
+}
+
+
+.product-card .close-button button,
+.product-card .action-button button {
+  background-color: #007BFF; /* Blue color */
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: white; /* Text color */
+  padding: 2px;
+  width: 60px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  border-radius: 2px; /* Slight curve for the corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card .close-button button:hover,
+.product-card .action-button button:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+.product-card .action-button {
+  position: absolute;
+  bottom: 14px; /* Adjust as needed for the distance from the bottom */
+  left: 18px; /* Adjust as needed for the distance from the right */
+}
+
+ /* Custom green color for the action button */
+ .product-card .action-button button {
+  background-color: #52b202; /* Green color */
+}
